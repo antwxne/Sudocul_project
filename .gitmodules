@@ -1,0 +1,6 @@
+[submodule "Backend/Generator"]
+	path = Backend/Generator
+	url = git@github.com:antwxne/sudocul_generator_API.git
+[submodule "Backend/Solver"]
+	path = Backend/Solver
+	url = git@github.com:antwxne/sudocul_solver_API.git
