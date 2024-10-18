@@ -4,3 +4,6 @@
 [submodule "Backend/Solver"]
 	path = Backend/Solver
 	url = git@github.com:antwxne/sudocul_solver_API.git
+[submodule "Frontend"]
+	path = Frontend
+	url = git@github.com:antwxne/sudocul_frontend.git
