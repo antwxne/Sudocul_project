@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sudocul-solver-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sudocul-solver-api
+  template:
+    metadata:
+      labels:
+        app: sudocul-solver-api
+    spec:
+      containers:
+      - name: sudocul-solver-api
+        image: antwxne/sudocul_solver_api:latest
+        ports:
+        - containerPort: 8080

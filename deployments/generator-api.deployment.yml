@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sudocul-generator-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sudocul-generator-api
+  template:
+    metadata:
+      labels:
+        app: sudocul-generator-api
+    spec:
+      containers:
+      - name: sudocul-generator-api
+        image: antwxne/sudocul_generator_api:latest
+        ports:
+        - containerPort: 3000
